@@ -102,9 +102,60 @@ This work is published under [MIT][mit] License.
 - Web Analytics
 - SEO & Performance Optimization
 
+<<<<<<< HEAD
 ## Documentation
 
 To learn how to use, develop, and upgrade the project, please refer to the [Wiki][wiki].
+=======
+The startup template for [**Jekyll Theme Chirpy**][chirpy].
+
+When installing the Chirpy through [RubyGems][gem], Jekyll can only read files in the folders `_includes`, `_layout`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file from the theme's gem (use the command `bundle info --path jekyll-theme-chirpy` to locate). To fully use all the features of Chirpy, you also need to copy other files/directories and config options from the theme's gem to your Jekyll site. So we extract all the required things of the theme's gem to help you quickly use Chirpy.
+
+```shell
+# The critical files/directories to run the theme
+├── _data
+├── _plugins
+├── _tabs
+├── _config.yml
+├── app.js
+├── feed.xml
+├── index.html
+├── robots.txt
+├── sw.js
+└── 404.html
+```
+
+## Installation
+
+[Use this template][usetemplate] to generate a new repository, and then execute:
+
+[usetemplate]: https://github.com/cotes2020/chirpy-starter/generate
+
+```
+$ bundle
+```
+
+## Usage
+
+### Customing Stylesheet
+
+Creare a new file `/assets/css/style.scss` in your Jekyll site.
+
+And then add the following content:
+
+```scss
+---
+---
+
+@import {{ site.theme }}
+
+// add your style below
+```
+
+### Changing the Number of Tabs
+
+When adding or deleting files in the `_tabs` folder, you need to complete the section [Customing Stylesheet](#customing-stylesheet) first, and then add a new line before `@import`:
+>>>>>>> 7a2365c (Update the site config according to the theme (v3.1.0))
 
 ## Contributing
 
@@ -129,6 +180,7 @@ The avatar and favicon for the project's website are from [ClipartMAX][clipartma
 
 ## License
 
+<<<<<<< HEAD
 This project is published under [MIT License][license].
 
 [gem]: https://rubygems.org/gems/jekyll-theme-chirpy
@@ -144,4 +196,13 @@ This project is published under [MIT License][license].
 [lib]: https://github.com/cotes2020/chirpy-static-assets
 [vscode]: https://code.visualstudio.com/
 [jetbrains]: https://www.jetbrains.com/?from=jekyll-theme-chirpy
+<<<<<<< HEAD
 >>>>>>> 95740f1b6117b8ceb935c150e77d4f8029022d82
+=======
+=======
+This work is published under [MIT](https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE) License.
+
+[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
+[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
+>>>>>>> 7a2365c (Update the site config according to the theme (v3.1.0))
+>>>>>>> ff41bf99e8f1e0d2d69c96b9754983265bda371f
