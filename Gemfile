@@ -12,7 +12,7 @@ gem "jekyll-readme-index"
 gem "jekyll-titles-from-headings"
 gem "jekyll-relative-links"
 gem "tzinfo-data"
-
+gem "github-pages"
 
 group :test do
   gem "html-proofer", "~> 5.0"
