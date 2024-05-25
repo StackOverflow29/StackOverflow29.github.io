@@ -9,7 +9,7 @@ CLI=("git" "npm")
 
 ACTIONS_WORKFLOW=pages-deploy.yml
 
-RELEASE_HASH=$(git log --grep="chore(release):" -1 --pretty="%H")
+RELEASE_HASH=$(git rev-parse HEAD)
 if [[ -z "$RELEASE_HASH" ]]; then
     echo "No release commit found. Please provide a valid release commit hash."
     exit 1
